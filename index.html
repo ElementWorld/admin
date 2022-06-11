@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+  .function-item{
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="content" style="padding: 20px 15px;">
+
+
+    <div style="margin-top: 20px" id="function-box">
+     <div class="function-item" id="setAddressBox">
+    <div class="mb-3">
+          <label for="setAddress_account" class="form-label">account</label>
+          <input type="text" class="form-control" id="setAddress_account" placeholder="address" aria-describedby="emailHelp">
+        </div>
+        
+    <div class="d-grid gap-2">
+         <button class="btn btn-primary" onclick="App.setAddress()" type="button">setAddress</button>
+       </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/web3.min.js"></script>
+<script src="./js/bignumber.min.js"></script>
+<script src="./dapp.js"></script>
+</html>
