@@ -2,11 +2,11 @@
 App = {
     web3Provider: null,
     contracts: {
-      EleIdo: null
+      Invest: null
     },
     currentAddress: '',
-    contractAddress: '0xB0286068316383AADE9665eA091d977aeb2b4F56',
-    contractAbi: [{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":true,"internalType":"address","name":"intro","type":"address"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"BindIntroLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"BuyNftLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"IdoLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[],"name":"ELE","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"USDT","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_intro","type":"address"}],"name":"buyNft","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"buyNftAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"freeIdoAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"freeNftAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"getChildren","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"getFreeUserInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"address","name":"intro","type":"address"},{"internalType":"address[]","name":"children","type":"address[]"},{"internalType":"bool","name":"isGetNft","type":"bool"},{"internalType":"bool","name":"isBuyNft","type":"bool"},{"internalType":"bool","name":"isIdo","type":"bool"},{"internalType":"bool","name":"isExist","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_intro","type":"address"}],"name":"ido","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"idoAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"idoNum","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"introNum","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"maxNft","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"receiveAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"rewardAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rootAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"setAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_ele","type":"address"}],"name":"setELE","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_freeIdoAddress","type":"address"}],"name":"setFreeIdoAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_maxNft","type":"uint256"}],"name":"setMaxNft","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_usdt","type":"address"}],"name":"setUsdt","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"total","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"userInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"address","name":"intro","type":"address"},{"internalType":"bool","name":"isGetNft","type":"bool"},{"internalType":"bool","name":"isBuyNft","type":"bool"},{"internalType":"bool","name":"isIdo","type":"bool"},{"internalType":"bool","name":"isExist","type":"bool"}],"stateMutability":"view","type":"function"}],
+    contractAddress: '0xb041B84d387C62C3c05aEC74e9c5C40840671851',
+    contractAbi: [{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":true,"internalType":"address","name":"intro","type":"address"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"BindIntroLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"},{"indexed":false,"internalType":"string","name":"key","type":"string"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"GrantLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"eleAmount","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"id","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"dayRate","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"StakedLog","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"time","type":"uint256"}],"name":"WithdrawLog","type":"event"},{"inputs":[],"name":"ELE","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"USDT","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"uint256","name":"needUsdtAmount","type":"uint256"},{"internalType":"uint256","name":"dayRate","type":"uint256"}],"name":"addStakeType","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"addWhitelist","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"delWhitelist","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"uint256","name":"needUsdtAmount","type":"uint256"},{"internalType":"uint256","name":"dayRate","type":"uint256"}],"name":"editStakeType","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"feeValue","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getAllStakeType","outputs":[{"components":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"uint256","name":"needUsdtAmount","type":"uint256"},{"internalType":"uint256","name":"dayRate","type":"uint256"}],"internalType":"struct Invest.StakeType[]","name":"stakeTypeArr","type":"tuple[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getCurTime","outputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"getEleAmount","outputs":[{"internalType":"uint256","name":"eleAmount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"getToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_index","type":"uint256"}],"name":"getWhitelist","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getWhitelistLength","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"string","name":"key","type":"string"}],"name":"grant","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"users","type":"address[]"},{"internalType":"uint256[]","name":"amounts","type":"uint256[]"},{"internalType":"string[]","name":"keys","type":"string[]"}],"name":"grantBatch","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"idoAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"isWhitelist","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"keyIsUsed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"rootAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"routerPath","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_feeValue","type":"uint256"}],"name":"setFeeValue","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_routerPath","type":"address"}],"name":"setRouterPath","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"_start","type":"bool"}],"name":"setStart","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"address","name":"_intro","type":"address"}],"name":"stake","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"start","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"userInfo","outputs":[{"internalType":"address","name":"intro","type":"address"},{"internalType":"uint256","name":"investAmmount","type":"uint256"},{"internalType":"uint256","name":"totalBack","type":"uint256"},{"internalType":"uint256","name":"lastTime","type":"uint256"},{"internalType":"bool","name":"isExist","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"payable","type":"function"}],
     initWeb3: async function () {
       if (window.ethereum) {
         App.web3Provider = window.ethereum
@@ -34,7 +34,7 @@ App = {
       });
     },
     initContract: function () {
-      App.contracts.EleIdo = new web3.eth.Contract(App.contractAbi, App.contractAddress);
+      App.contracts.Invest = new web3.eth.Contract(App.contractAbi, App.contractAddress);
       return App.bindEvents();
     },
     bindEvents: function () {
@@ -46,53 +46,88 @@ App = {
       $('#' +functionAbi.name + 'Box').show().siblings().hide()
 
     },
-    buyNft:async function (){
-            let buyNft__intro = $('#buyNft__intro').val()
+    addStakeType:async function (){
+            let addStakeType_id = $('#addStakeType_id').val()
+      let addStakeType_needUsdtAmount = $('#addStakeType_needUsdtAmount').val()
+      let addStakeType_dayRate = $('#addStakeType_dayRate').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.buyNft(buyNft__intro).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.addStakeType(addStakeType_id,addStakeType_needUsdtAmount,addStakeType_dayRate).send({from:App.currentAddress})
           },
-          ido:async function (){
-            let ido__intro = $('#ido__intro').val()
+          addWhitelist:async function (){
+            let addWhitelist_account = $('#addWhitelist_account').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.ido(ido__intro).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.addWhitelist(addWhitelist_account).send({from:App.currentAddress})
+          },
+          delWhitelist:async function (){
+            let delWhitelist_account = $('#delWhitelist_account').val()
+      
+            let dataInvest = await App.contracts.Invest.methods.delWhitelist(delWhitelist_account).send({from:App.currentAddress})
+          },
+          editStakeType:async function (){
+            let editStakeType_id = $('#editStakeType_id').val()
+      let editStakeType_needUsdtAmount = $('#editStakeType_needUsdtAmount').val()
+      let editStakeType_dayRate = $('#editStakeType_dayRate').val()
+      
+            let dataInvest = await App.contracts.Invest.methods.editStakeType(editStakeType_id,editStakeType_needUsdtAmount,editStakeType_dayRate).send({from:App.currentAddress})
+          },
+          getToken:async function (){
+            let getToken_amount = $('#getToken_amount').val()
+            let amount = new BigNumber(getToken_amount).multipliedBy(10**18).toFixed()
+            console.log(amount)
+            let dataInvest = await App.contracts.Invest.methods.getToken(amount).send({from:App.currentAddress})
+          },
+          grant:async function (){
+            let grant_user = $('#grant_user').val()
+      let grant_amount = $('#grant_amount').val()
+      let grant_key = $('#grant_key').val()
+      
+            let dataInvest = await App.contracts.Invest.methods.grant(grant_user,grant_amount,grant_key).send({from:App.currentAddress})
+          },
+          grantBatch:async function (){
+            let grantBatch_users = $('#grantBatch_users').val()
+      let grantBatch_amounts = $('#grantBatch_amounts').val()
+      let grantBatch_keys = $('#grantBatch_keys').val()
+      
+            let dataInvest = await App.contracts.Invest.methods.grantBatch(grantBatch_users,grantBatch_amounts,grantBatch_keys).send({from:App.currentAddress})
           },
           initialize:async function (){
             
-            let dataEleIdo = await App.contracts.EleIdo.methods.initialize().send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.initialize().send({from:App.currentAddress})
           },
           renounceOwnership:async function (){
             
-            let dataEleIdo = await App.contracts.EleIdo.methods.renounceOwnership().send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.renounceOwnership().send({from:App.currentAddress})
           },
-          setAddress:async function (){
-            let setAddress_account = $('#setAddress_account').val()
+          setFeeValue:async function (){
+            let setFeeValue__feeValue = $('#setFeeValue__feeValue').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.setAddress(setAddress_account).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.setFeeValue(setFeeValue__feeValue).send({from:App.currentAddress})
           },
-          setELE:async function (){
-            let setELE__ele = $('#setELE__ele').val()
+          setRouterPath:async function (){
+            let setRouterPath__routerPath = $('#setRouterPath__routerPath').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.setELE(setELE__ele).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.setRouterPath(setRouterPath__routerPath).send({from:App.currentAddress})
           },
-          setFreeIdoAddress:async function (){
-            let setFreeIdoAddress__freeIdoAddress = $('#setFreeIdoAddress__freeIdoAddress').val()
+          setStart:async function (){
+            let setStart__start = $('#setStart__start').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.setFreeIdoAddress(setFreeIdoAddress__freeIdoAddress).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.setStart(setStart__start).send({from:App.currentAddress})
           },
-          setMaxNft:async function (){
-            let setMaxNft__maxNft = $('#setMaxNft__maxNft').val()
+          stake:async function (){
+            let stake_id = $('#stake_id').val()
+      let stake__intro = $('#stake__intro').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.setMaxNft(setMaxNft__maxNft).send({from:App.currentAddress})
-          },
-          setUsdt:async function (){
-            let setUsdt__usdt = $('#setUsdt__usdt').val()
-      
-            let dataEleIdo = await App.contracts.EleIdo.methods.setUsdt(setUsdt__usdt).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.stake(stake_id,stake__intro).send({from:App.currentAddress})
           },
           transferOwnership:async function (){
             let transferOwnership_newOwner = $('#transferOwnership_newOwner').val()
       
-            let dataEleIdo = await App.contracts.EleIdo.methods.transferOwnership(transferOwnership_newOwner).send({from:App.currentAddress})
+            let dataInvest = await App.contracts.Invest.methods.transferOwnership(transferOwnership_newOwner).send({from:App.currentAddress})
+          },
+          withdraw:async function (){
+            
+            let ethValue = $('#ethValue').val()
+            let dataInvest = await App.contracts.Invest.methods.withdraw().send({from:App.currentAddress,value: ethValue})
           },
           
   };
