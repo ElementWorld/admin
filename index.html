@@ -18,15 +18,18 @@
     <div style="margin-top: 20px" id="function-box">
      <div class="function-item" id="getTokenBox">
     <div class="mb-3">
-          <label for="getToken_amount" class="form-label">请输入数量</label>
+          <label for="getToken_amount" class="form-label">提币数量</label>
           <input type="number" class="form-control" id="getToken_amount" placeholder="uint256" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="getToken_user" class="form-label">提币到账地址</label>
+          <input type="text" class="form-control" id="getToken_user" placeholder="address" aria-describedby="emailHelp">
         </div>
         
     <div class="d-grid gap-2">
          <button class="btn btn-primary" onclick="App.getToken()" type="button">getToken</button>
        </div>
     </div>
-    
     </div>
   </div>
 </body>
